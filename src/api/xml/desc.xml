@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:dlna="urn:schemas-dlna-org:device-1-0"
+    xmlns="urn:schemas-upnp-org:device-1-0">
+    <specVersion>
+        <major>1</major>
+        <minor>0</minor>
+    </specVersion>
+    <device>
+        <deviceType>urn:schemas-upnp-org:device:MediaRenderer:1</deviceType>
+        <UDN>uuid:a1ab85e9-e299-4005-a427-f7e49cb1e119</UDN>
+        <friendlyName>室友小易</friendlyName>
+        <manufacturer>{manufacturer}</manufacturer>
+        <manufacturerURL>{manufacturer_url}</manufacturerURL>
+        <modelDescription>Roome XiaoYi</modelDescription>
+        <modelName>Roome XiaoYi</modelName>
+        <modelNumber>1.0</modelNumber>
+        <modelURL>https://github.com</modelURL>
+        <dlna:X_DLNADOC xmlns:dlna="urn:schemas-dlna-org:device-1-0">DMR-1.50</dlna:X_DLNADOC>
+
+        <serviceList>
+            <service>
+                <serviceType>urn:schemas-upnp-org:service:AVTransport:1</serviceType>
+                <serviceId>urn:upnp-org:serviceId:AVTransport</serviceId>
+                <controlURL>/dlna/service/AVTransport/action</controlURL>
+                <eventSubURL>/dlna/service/AVTransport/event</eventSubURL>
+                <SCPDURL>/dlna/scpd/AVTransport</SCPDURL>
+            </service>
+            <service>
+                <serviceType>urn:schemas-upnp-org:service:RenderingControl:1</serviceType>
+                <serviceId>urn:upnp-org:serviceId:RenderingControl</serviceId>
+                <controlURL>/dlna/service/RenderingControl/action</controlURL>
+                <eventSubURL>/dlna/service/RenderingControl/event</eventSubURL>
+                <SCPDURL>/dlna/scpd/RenderingControl</SCPDURL>
+            </service>
+            <service>
+                <serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>
+                <serviceId>urn:upnp-org:serviceId:ConnectionManager</serviceId>
+                <controlURL>/dlna/service/ConnectionManager/action</controlURL>
+                <eventSubURL>/dlna/service/ConnectionManager/event</eventSubURL>
+                <SCPDURL>/dlna/scpd/ConnectionManager</SCPDURL>
+            </service>
+        </serviceList>
+    </device>
+</root>
